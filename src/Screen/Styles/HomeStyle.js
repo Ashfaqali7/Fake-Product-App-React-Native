@@ -1,0 +1,72 @@
+const Homestyle = {
+  container: {
+    width: '100%',
+    alignItems: 'center',
+  },
+  Box: {
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+    },
+    shadowOpacity: 0.55,
+    shadowRadius: 14.78,
+    elevation: 22,
+    width: '80%',
+    height: 350,
+    alignItems: 'center',
+    margin: 15,
+    borderRadius: 15,
+  },
+  TextBox: {
+    backgroundColor: '#fff',
+    width: '100%',
+    height: 200,
+    borderBottomEndRadius: 15,
+    borderBottomLeftRadius: 15,
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    borderTopWidth: 0.5,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 11,
+    },
+    shadowOpacity: 1,
+    shadowRadius: 14.78,
+    elevation: 22,
+  },
+  image: {
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
+    height: 150,
+    width: '100%',
+    resizeMode: 'contain',
+  },
+  price: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    color: '#000',
+  },
+  buyButton: {
+    borderWidth: 1,
+    borderRadius: 30,
+    width: '35%',
+    height: 35,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#264653',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 11,
+    },
+    shadowOpacity: 0.55,
+    shadowRadius: 14.78,
+    elevation: 22,
+  },
+  title: {
+    fontSize: 15,
+  },
+};
+export default Homestyle;
