@@ -14,18 +14,15 @@ import Homestyle from './Styles/HomeStyle';
 const HomeScreen = ({navigation}) => {
   ///For getting data from Login page /////
 
-  // console.log(route.params.email);
+  // console.log(route.params);
 
   ///For getting data from Login page /////
 
   // for next page
-  const [oneValue, setoneValue] = useState([]);
-  async function nextpage(e) {
-    setoneValue(e);
-    console.log(e.price);
-    console.log(oneValue);
-    navigation.navigate('Details', {oneValue: oneValue});
-  }
+
+  const nextpage = item => {
+    navigation.navigate('Details', {singleData: item});
+  };
   // for next page end
 
   ////For Api Fetch start.....///////
@@ -58,7 +55,7 @@ const HomeScreen = ({navigation}) => {
                 <Text style={styles.title}>{e.title} </Text>
                 <TouchableOpacity
                   style={styles.buyButton}
-                  onPress={() => nextpage(e, i)}>
+                  onPress={() => nextpage(e)}>
                   <Text style={{color: '#fff', fontWeight: 'bold'}}>
                     Read more
                   </Text>

@@ -57,6 +57,7 @@ const Detailsstyles = {
     fontSize: 18,
     fontWeight: 'bold',
     marginVertical: 10,
+    color: '#000',
   },
   Description: {
     backgroundColor: '#fff',
@@ -76,6 +77,7 @@ const Detailsstyles = {
   },
   des: {
     fontSize: 15,
+    color: '#000',
   },
   buyButton: {
     borderRadius: 30,
